@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>twitter clone</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial;
+        color: white;
+      }
+      .left-section {
+        width: 55%;
+        top: 0;
+        left: 0;
+      }
+      .twitter-background {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 630px; */
+        margin-bottom: 20px;
+      }
+      .twitter-sparrow {
+        position: absolute;
+        z-index: 100;
+        top: 150px;
+        left: 200px;
+        width: 400px;
+      }
+
+      .bottom-links {
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .bottom-links a:link {
+        color: lightgray;
+        text-decoration: none;
+      }
+      .bottom-links a:visited {
+        color: lightgray;
+        text-decoration: none;
+      }
+      .bottom-links a:hover {
+        color: lightgray;
+        text-decoration: underline;
+      }
+      .bottom-links a:active {
+        color: lightgray;
+      }
+      .copyright {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        color: lightgray;
+        margin-bottom: 10px;
+      }
+
+      section {
+        display: flex;
+      }
+      .right-side {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 45%;
+      }
+      .twitter-logo {
+        width: 40px;
+        margin-bottom: 50px;
+      }
+      .happening-now {
+        font-size: 60px;
+        font-weight: bold;
+        color: lightgray;
+        margin-bottom: 40px;
+      }
+      .join-twitter-today {
+        color: lightgray;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .google-signup-button, 
+      .apple-signup-button {
+        display: flex;
+        justify-content: center;
+        width: 280px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 50px;
+        border: none;
+        margin-bottom: 20px;
+        background-color: whitesmoke;
+      }
+      .google-logo, 
+      .apple-logo {
+        width: 20px;
+        margin-right: 8px;
+      }
+      .lines {
+        display: flex;
+      }
+      hr {
+        width: 112px;
+        background-color: lightgray;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-bottom: 20px;
+      }
+      .signup-with-phone-or-email {
+        background-color: rgb(74, 168, 251);
+        color: white;
+        width: 280px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .signup-statement {
+        font-size: 10px;
+        width: 300px;
+        margin-bottom: 40px;
+      }
+      .signup-statement a:link {
+        color: rgb(74, 168, 251);
+        text-decoration: none;
+      }
+      .signup-statement a:visited {
+        color: rgb(74, 168, 251);
+        text-decoration: none;
+      }
+      .already-have-account {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .signin-button {
+        width: 280px;
+        background-color: black;
+        color: rgb(74, 168, 251);
+        border: 0.1px solid rgba(74, 168, 251, 0.404);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 50px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="left-section">
+        <div>
+          <img class="twitter-background" src="thumbnails/lohp_en_1302x955.png" alt="">
+        </div>
+        <div>
+          <img class="twitter-sparrow" src="thumbnails/pngegg.png" alt="">
+        </div>
+      </div>
+  
+      <div class="right-side">
+        <div>
+          <img class="twitter-logo" src="thumbnails/pngegg.png" alt="">
+        </div>
+        <div class="happening-now">Happening now</div>
+        <div class="join-twitter-today">Join Twitter today.</div>
+        <button class="google-signup-button">
+          <img class="google-logo" src="thumbnails/google-logo-9824.png" alt="">
+          Sign up with Google
+        </button>
+        <button class="apple-signup-button">
+          <img class="apple-logo" src="thumbnails/APPLE_LOGO_BLACK_TRANSPARENT_generated.jpg" alt="">
+          Sign up with Apple
+        </button>
+        <div class="lines">
+          <hr> or <hr>
+        </div>
+        <button class="signup-with-phone-or-email">Sign up with phone or email</button>
+
+        <div class="signup-statement">
+          By signing up, you agree to the 
+          <a href="https://twitter.com/en/tos">Terms of Service</a>  and 
+          <a href="https://twitter.com/en/privacy">Privacy Policy</a> , including 
+          <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookie Use.</a> 
+        </div>
+
+        <div class="already-have-account">Already have an account?</div>
+
+        <button class="signin-button">Sign in</button>
+       
+  
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="bottom-links">
+        <div><a href="https://about.twitter.com">About</a></div>
+        <div><a href="https://help.twitter.com">Help Center</a></div>
+        <div><a href="https://twitter.com/tos">Terms of Service</a></div>
+        <div><a href="https://twitter.com/privacy">Privacy Policy</a></div>
+        <div><a href="https://support.twitter.com/articles/20170514">Cookie Policy</a></div>
+        <div><a href="https://help.twitter.com/resources/accessibility">Accessibility</a></div>
+        <div><a href="https://about.twitter.com">Ads info</a></div>
+        <div><a href="https://blog.twitter.com">Blog</a></div>
+        <div><a href="https://status.twitterstat.us">Status</a></div>
+        <div><a href="https://careers.twitter.com">Careers</a></div>
+        <div><a href="https://about.twitter.com/press/brand-assets">Brand Resources</a></div>
+        <div><a href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-advertise">Advertising</a></div>
+        <div><a href="https://marketing.twitter.com">Marketing</a></div>
+        <div><a href="https://business.twitter.com">Twitter for Business</a></div>
+        <div><a href="https://developer.twitter.com">Developers</a></div>
+        <div><a href="https://twitter.com/directory/profiles">Directory</a></div>
+        <div><a href="https://twitter.com/settings">Settings</a></div>
+              
+      </div>
+      <div class="copyright"><span>&copy</span> 2022 Twitter, Inc.</div>
+    </footer>
+
+  </body>
+</html>
